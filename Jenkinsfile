@@ -11,7 +11,7 @@ pipeline {
         }
         stage("Clone Repositorio"){
             steps {
-                git 'https://github.com/elGiank/node-ts-sonarq-jenkins-poc-.git'
+                git 'https://github.com/elGiank/node-ts-sonarq-jenkins-postman.git'
             }
         }
         stage("Instalar dependencias"){
