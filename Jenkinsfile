@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        currentDateTime = sh(returnStdout: true, script: 'date +%d%m%Y%H%M%S').trim()
+    }
+
     tools {nodejs "node16132"}
 
     stages {
@@ -47,7 +51,8 @@ pipeline {
         }
         stage("Pruebas de API pos-despliegue") {
             steps {
-                sh "npm run test:api"
+                sh "npm run test:api-dev"
+                sh "curl -ugianca_cia@hotmail.com:AP3eEDadkQ473rGBw6ybXXHvUZa -T ./newman/report.html \"https://giancarlotest.jfrog.io/artifactory/qa-report-generic-local/${currentDateTime}.html\""
             }
         }
     }
