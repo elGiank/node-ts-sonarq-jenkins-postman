@@ -11,7 +11,7 @@
     "test:api-dev": "newman run test/api/collection.json -e test/api/env/dev.env.json -r htmlextra --reporter-htmlextra-export ./newman/report.html",
     "test:api-qa": "newman run test/api/collection.json -e test/api/env/qa.env.json -r htmlextra --reporter-htmlextra-export ./newman/report.html",
     "test:api-prod": "newman run test/api/collection.json -e test/api/env/prod.env.json -r htmlextra --reporter-htmlextra-export ./newman/report.html",
-    "test:api-dev-param-override": "newman run test/api/collection.json -e test/api/env/dev.env.json --env-var \"restBaseUrl=https://rickandmortyapi.com/api\" -r htmlextra --reporter-htmlextra-export ./newman/report.html",
+    "test:api-dev-param-override": "newman run test/api/collection.json -e test/api/env/dev.env.json --env-var \"restBaseUrl=https://rickandmortyapi.com/api\" -r htmlextra --reporter-htmlextra-export ./newman/report.html"
   },
   "keywords": [],
   "author": "",
