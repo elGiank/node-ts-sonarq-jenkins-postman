@@ -37,7 +37,13 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{authToken}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{restBaseUrl}}/episode",
 									"host": [
@@ -73,7 +79,13 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{authToken}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{restBaseUrl}}/episode/{{id}}",
 									"host": [
@@ -112,7 +124,13 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{authToken}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{restBaseUrl}}/location",
 									"host": [
@@ -147,7 +165,13 @@
 							],
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{authToken}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{restBaseUrl}}/location/{{id}}",
 									"host": [
